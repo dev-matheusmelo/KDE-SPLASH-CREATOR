@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_kde_splash_creator_FILE /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator)
+set(__QT_DEPLOY_TARGET_kde_splash_creator_TYPE EXECUTABLE)
