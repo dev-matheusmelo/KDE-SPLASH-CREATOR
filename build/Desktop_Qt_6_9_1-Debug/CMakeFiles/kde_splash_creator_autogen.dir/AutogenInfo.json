@@ -486,6 +486,12 @@
 			null
 		],
 		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/mainwindow.h",
+			"MU",
+			"XQ3WBZHXXP/moc_mainwindow.cpp",
+			null
+		],
+		[
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.h",
 			"MU",
 			"FPDX4F53LH/moc_global_vars.cpp",
@@ -501,12 +507,6 @@
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/splash_qml_class.h",
 			"MU",
 			"FPDX4F53LH/moc_splash_qml_class.cpp",
-			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.h",
-			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		]
 	],
@@ -598,17 +598,17 @@
 			null
 		],
 		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/main.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.cpp",
 			"MU",
 			null
 		]

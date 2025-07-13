@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-c51843e050ec19b17258.json",
+					"jsonFile" : "directory-.-Debug-fd2ab2791abf4ad4d8fa.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "kde_splash_creator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-kde_splash_creator-Debug-ed7ed24232ec8bc97a2e.json",
+					"jsonFile" : "target-kde_splash_creator-Debug-206606fec7ef9ef98619.json",
 					"name" : "kde_splash_creator",
 					"projectIndex" : 0
 				},

@@ -4,4 +4,4 @@
 #include "XQ3WBZHXXP/moc_add_image_dialog.cpp"
 #include "XQ3WBZHXXP/moc_add_metadata_dialog.cpp"
 #include "XQ3WBZHXXP/moc_add_text_dialog.cpp"
-#include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "XQ3WBZHXXP/moc_mainwindow.cpp"
