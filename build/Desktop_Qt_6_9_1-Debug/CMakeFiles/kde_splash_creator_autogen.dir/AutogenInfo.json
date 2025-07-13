@@ -456,57 +456,57 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.h",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_animatedimage_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_add_animatedimage_dialog.cpp",
+			"XQ3WBZHXXP/moc_add_animatedimage_dialog.cpp",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.h",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_background_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_add_image_dialog.cpp",
+			"XQ3WBZHXXP/moc_add_background_dialog.cpp",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.h",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_image_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_add_text_dialog.cpp",
+			"XQ3WBZHXXP/moc_add_image_dialog.cpp",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.h",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_metadata_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_background_dialog.cpp",
+			"XQ3WBZHXXP/moc_add_metadata_dialog.cpp",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/global_vars.h",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_text_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_global_vars.cpp",
+			"XQ3WBZHXXP/moc_add_text_dialog.cpp",
+			null
+		],
+		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.h",
+			"MU",
+			"FPDX4F53LH/moc_global_vars.cpp",
+			null
+		],
+		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/splash_metadata_class.h",
+			"MU",
+			"FPDX4F53LH/moc_splash_metadata_class.cpp",
+			null
+		],
+		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/splash_qml_class.h",
+			"MU",
+			"FPDX4F53LH/moc_splash_qml_class.cpp",
 			null
 		],
 		[
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.h",
-			"MU",
-			"EWIEGA46WW/moc_metadata_dialog.cpp",
-			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/splash_metadata.h",
-			"MU",
-			"EWIEGA46WW/moc_splash_metadata.cpp",
-			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/splash_qml_class.h",
-			"MU",
-			"EWIEGA46WW/moc_splash_qml_class.cpp",
 			null
 		]
 	],
@@ -523,6 +523,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator",
+		"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers",
+		"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs",
 		"/home/ziguser/Qt/6.9.1/gcc_64/include/QtCore",
 		"/home/ziguser/Qt/6.9.1/gcc_64/include",
 		"/home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++",
@@ -570,27 +573,32 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.cpp",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_animatedimage_dialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.cpp",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_background_dialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.cpp",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_image_dialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.cpp",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_metadata_dialog.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/global_vars.cpp",
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_text_dialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.cpp",
 			"MU",
 			null
 		],
@@ -603,15 +611,13 @@
 			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.cpp",
 			"MU",
 			null
-		],
-		[
-			"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.cpp",
-			"MU",
-			null
 		]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [],
+	"UIC_SEARCH_PATHS" : 
+	[
+		"/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui"
+	],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,

@@ -4,8 +4,8 @@
 #include "add_image_dialog.h"
 #include "add_animatedimage_dialog.h"
 #include "global_vars.h"
-#include "background_dialog.h"
-#include "metadata_dialog.h"
+#include "add_background_dialog.h"
+#include "add_metadata_dialog.h"
 #include "add_text_dialog.h"
 #include "QMessageBox"
 #include "QFileDialog"
@@ -79,7 +79,7 @@ void MainWindow::on_comboBox_elements_currentIndexChanged(int index)
 
 void MainWindow::on_pushButton_background_clicked()
 {
-    background_dialog w;
+    add_background_dialog w;
     if(w.exec() == 0){
         ui->listWidget->clear();
         foreach(auto copy, globals::qml_vec){
@@ -93,7 +93,7 @@ void MainWindow::on_pushButton_background_clicked()
 
 void MainWindow::on_pushButton_splashinfo_clicked()
 {
-    metadata_dialog w;
+    add_metadata_dialog w;
     if(w.exec() == 0){
         ui->pushButton_save->setEnabled(true);
         ui->pushButton_save->setEnabled(true);

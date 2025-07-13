@@ -27,14 +27,14 @@ public:
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
     QLabel *label;
-    QPushButton *pushButton;
+    QPushButton *pushButton_add;
     QLabel *label_3;
     QSpinBox *spinBox_width;
     QLabel *label_4;
     QSpinBox *spinBox_height;
     QLabel *label_2;
     QDoubleSpinBox *doubleSpinBox;
-    QPushButton *pushButton_2;
+    QPushButton *pushButton_save;
 
     void setupUi(QDialog *add_animatedimage_dialog)
     {
@@ -52,10 +52,10 @@ public:
 
         verticalLayout->addWidget(label);
 
-        pushButton = new QPushButton(add_animatedimage_dialog);
-        pushButton->setObjectName("pushButton");
+        pushButton_add = new QPushButton(add_animatedimage_dialog);
+        pushButton_add->setObjectName("pushButton_add");
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(pushButton_add);
 
         label_3 = new QLabel(add_animatedimage_dialog);
         label_3->setObjectName("label_3");
@@ -95,10 +95,10 @@ public:
 
         verticalLayout->addWidget(doubleSpinBox);
 
-        pushButton_2 = new QPushButton(add_animatedimage_dialog);
-        pushButton_2->setObjectName("pushButton_2");
+        pushButton_save = new QPushButton(add_animatedimage_dialog);
+        pushButton_save->setObjectName("pushButton_save");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(pushButton_save);
 
 
         retranslateUi(add_animatedimage_dialog);
@@ -110,12 +110,12 @@ public:
     {
         add_animatedimage_dialog->setWindowTitle(QCoreApplication::translate("add_animatedimage_dialog", "Add Animated Image ", nullptr));
         label->setText(QCoreApplication::translate("add_animatedimage_dialog", "File:", nullptr));
-        pushButton->setText(QCoreApplication::translate("add_animatedimage_dialog", "ADD ANIMATED IMAGE (GIF)", nullptr));
+        pushButton_add->setText(QCoreApplication::translate("add_animatedimage_dialog", "ADD ANIMATED IMAGE (GIF)", nullptr));
         label_3->setText(QCoreApplication::translate("add_animatedimage_dialog", "Width:", nullptr));
         label_4->setText(QCoreApplication::translate("add_animatedimage_dialog", "Height:", nullptr));
         label_2->setText(QCoreApplication::translate("add_animatedimage_dialog", "Speed of image: 1x  is default, 2x is double and 0.5 is slowed", nullptr));
         doubleSpinBox->setSuffix(QString());
-        pushButton_2->setText(QCoreApplication::translate("add_animatedimage_dialog", "SAVE", nullptr));
+        pushButton_save->setText(QCoreApplication::translate("add_animatedimage_dialog", "SAVE", nullptr));
     } // retranslateUi
 
 };

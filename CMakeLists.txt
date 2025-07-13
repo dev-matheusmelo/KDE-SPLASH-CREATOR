@@ -12,57 +12,94 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+set(MAINWINDOW_FILES
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+)
+
+set(DIALOGS_HEADERS
+    dialogs/headers/add_image_dialog.h
+    dialogs/headers/add_background_dialog.h
+    dialogs/headers/add_metadata_dialog.h
+    dialogs/headers/add_animatedimage_dialog.h
+    dialogs/headers/add_text_dialog.h
+)
+
+set(DIALOGS_SOURCES
+    dialogs/sources/add_image_dialog.cpp
+    dialogs/sources/add_background_dialog.cpp
+    dialogs/sources/add_metadata_dialog.cpp
+    dialogs/sources/add_animatedimage_dialog.cpp
+    dialogs/sources/add_text_dialog.cpp
+)
+
+set(DIALOGS_UIS
+    dialogs/ui/add_image_dialog.ui
+    dialogs/ui/add_background_dialog.ui
+    dialogs/ui/add_metadata_dialog.ui
+    dialogs/ui/add_animatedimage_dialog.ui
+    dialogs/ui/add_text_dialog.ui
+)
+
+set(LIBS_HEADERS
+    libs/splash_qml_class.h
+    libs/global_vars.h
+    libs/splash_metadata_class.h
+)
+
+set(LIBS_SOURCES
+    libs/global_vars.cpp
+)
+
+set(ALL_PROJECT_SOURCES
+    main.cpp
+    ${MAINWINDOW_FILES}
+    ${DIALOGS_HEADERS}
+    ${DIALOGS_SOURCES}
+    ${DIALOGS_UIS}
+    ${LIBS_HEADERS}
+    ${LIBS_SOURCES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(kde_splash_creator
         MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-
-        add_image_dialog.h add_image_dialog.cpp add_image_dialog.ui
-        splash_qml_class.h
-        global_vars.cpp
-        global_vars.h
-        background_dialog.h background_dialog.cpp background_dialog.ui
-        splash_metadata.h
-        metadata_dialog.h metadata_dialog.cpp metadata_dialog.ui
-        add_animatedimage_dialog.h add_animatedimage_dialog.cpp add_animatedimage_dialog.ui
-        add_text_dialog.h add_text_dialog.cpp add_text_dialog.ui
-
-
-
+        ${ALL_PROJECT_SOURCES}
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET kde_splash_creator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
         add_library(kde_splash_creator SHARED
-            ${PROJECT_SOURCES}
+            ${ALL_PROJECT_SOURCES}
         )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(kde_splash_creator
-            ${PROJECT_SOURCES}
+            ${ALL_PROJECT_SOURCES}
         )
     endif()
 endif()
 
+target_include_directories(kde_splash_creator PRIVATE
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/dialogs/headers
+    ${CMAKE_SOURCE_DIR}/libs
+)
+
+set_target_properties(kde_splash_creator PROPERTIES
+    AUTOUIC_SEARCH_PATHS
+        ${CMAKE_SOURCE_DIR}/dialogs/ui
+)
+
 target_link_libraries(kde_splash_creator PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
-if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.kde_splash_creator)
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(kde_splash_creator)
 endif()
+
+if(${QT_VERSION} VERSION_LESS 6.1.0)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.kde_splash_creator)
+endif()
+
 set_target_properties(kde_splash_creator PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
@@ -77,7 +114,3 @@ install(TARGETS kde_splash_creator
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-
-if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(kde_splash_creator)
-endif()

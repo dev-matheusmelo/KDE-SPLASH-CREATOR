@@ -53,7 +53,7 @@ build CMakeFiles/kde_splash_creator.dir/kde_splash_creator_autogen/mocs_compilat
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/kde_splash_creator.dir/kde_splash_creator_autogen/mocs_compilation.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
   OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/kde_splash_creator_autogen
 
@@ -61,7 +61,7 @@ build CMakeFiles/kde_splash_creator.dir/main.cpp.o: CXX_COMPILER__kde_splash_cre
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/kde_splash_creator.dir/main.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
   OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
 
@@ -69,57 +69,57 @@ build CMakeFiles/kde_splash_creator.dir/mainwindow.cpp.o: CXX_COMPILER__kde_spla
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/kde_splash_creator.dir/mainwindow.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
   OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
 
-build CMakeFiles/kde_splash_creator.dir/add_image_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_image_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_image_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/add_image_dialog.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_image_dialog.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/dialogs/sources
 
-build CMakeFiles/kde_splash_creator.dir/global_vars.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/global_vars.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_background_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_background_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/global_vars.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_background_dialog.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/dialogs/sources
 
-build CMakeFiles/kde_splash_creator.dir/background_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_metadata_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_metadata_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/background_dialog.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_metadata_dialog.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/dialogs/sources
 
-build CMakeFiles/kde_splash_creator.dir/metadata_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_animatedimage_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_animatedimage_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/metadata_dialog.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_animatedimage_dialog.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/dialogs/sources
 
-build CMakeFiles/kde_splash_creator.dir/add_animatedimage_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_text_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_text_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/add_animatedimage_dialog.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_text_dialog.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/dialogs/sources
 
-build CMakeFiles/kde_splash_creator.dir/add_text_dialog.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.cpp || cmake_object_order_depends_target_kde_splash_creator
+build CMakeFiles/kde_splash_creator.dir/libs/global_vars.cpp.o: CXX_COMPILER__kde_splash_creator_unscanned_Debug /home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.cpp || cmake_object_order_depends_target_kde_splash_creator
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/kde_splash_creator.dir/add_text_dialog.cpp.o.d
+  DEP_FILE = CMakeFiles/kde_splash_creator.dir/libs/global_vars.cpp.o.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
+  INCLUDES = -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/include -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers -I/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtCore -isystem /home/ziguser/Qt/6.9.1/gcc_64/include -isystem /home/ziguser/Qt/6.9.1/gcc_64/mkspecs/linux-g++ -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtWidgets -isystem /home/ziguser/Qt/6.9.1/gcc_64/include/QtGui
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
-  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir
+  OBJECT_FILE_DIR = CMakeFiles/kde_splash_creator.dir/libs
 
 
 # =============================================================================
@@ -129,7 +129,7 @@ build CMakeFiles/kde_splash_creator.dir/add_text_dialog.cpp.o: CXX_COMPILER__kde
 #############################################
 # Link the executable kde_splash_creator
 
-build kde_splash_creator: CXX_EXECUTABLE_LINKER__kde_splash_creator_Debug CMakeFiles/kde_splash_creator.dir/kde_splash_creator_autogen/mocs_compilation.cpp.o CMakeFiles/kde_splash_creator.dir/main.cpp.o CMakeFiles/kde_splash_creator.dir/mainwindow.cpp.o CMakeFiles/kde_splash_creator.dir/add_image_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/global_vars.cpp.o CMakeFiles/kde_splash_creator.dir/background_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/metadata_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/add_animatedimage_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/add_text_dialog.cpp.o | /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Widgets.so.6.9.1 /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Gui.so.6.9.1 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Core.so.6.9.1 || kde_splash_creator_autogen kde_splash_creator_autogen_timestamp_deps
+build kde_splash_creator: CXX_EXECUTABLE_LINKER__kde_splash_creator_Debug CMakeFiles/kde_splash_creator.dir/kde_splash_creator_autogen/mocs_compilation.cpp.o CMakeFiles/kde_splash_creator.dir/main.cpp.o CMakeFiles/kde_splash_creator.dir/mainwindow.cpp.o CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_image_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_background_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_metadata_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_animatedimage_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/dialogs/sources/add_text_dialog.cpp.o CMakeFiles/kde_splash_creator.dir/libs/global_vars.cpp.o | /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Widgets.so.6.9.1 /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Gui.so.6.9.1 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Core.so.6.9.1 || kde_splash_creator_autogen kde_splash_creator_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/ziguser/Qt/6.9.1/gcc_64/lib:  /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Widgets.so.6.9.1  /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Gui.so.6.9.1  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so  /home/ziguser/Qt/6.9.1/gcc_64/lib/libQt6Core.so.6.9.1  -Wl,-rpath-link,/home/ziguser/Qt/6.9.1/gcc_64/lib
   OBJECT_DIR = CMakeFiles/kde_splash_creator.dir
@@ -214,7 +214,7 @@ build kde_splash_creator_autogen_timestamp_deps: phony
 #############################################
 # Utility command for kde_splash_creator_autogen
 
-build kde_splash_creator_autogen: phony CMakeFiles/kde_splash_creator_autogen kde_splash_creator_autogen/include/ui_mainwindow.h kde_splash_creator_autogen/include/ui_add_image_dialog.h kde_splash_creator_autogen/include/ui_background_dialog.h kde_splash_creator_autogen/include/ui_metadata_dialog.h kde_splash_creator_autogen/include/ui_add_animatedimage_dialog.h kde_splash_creator_autogen/include/ui_add_text_dialog.h kde_splash_creator_autogen/timestamp kde_splash_creator_autogen/mocs_compilation.cpp kde_splash_creator_autogen_timestamp_deps
+build kde_splash_creator_autogen: phony CMakeFiles/kde_splash_creator_autogen kde_splash_creator_autogen/include/ui_mainwindow.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_image_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_background_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_metadata_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_animatedimage_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_text_dialog.h kde_splash_creator_autogen/timestamp kde_splash_creator_autogen/mocs_compilation.cpp kde_splash_creator_autogen_timestamp_deps
 
 
 #############################################
@@ -231,7 +231,7 @@ build kde_splash_creator_autogen/timestamp kde_splash_creator_autogen/mocs_compi
 #############################################
 # Phony custom command for CMakeFiles/kde_splash_creator_autogen
 
-build CMakeFiles/kde_splash_creator_autogen kde_splash_creator_autogen/include/ui_mainwindow.h kde_splash_creator_autogen/include/ui_add_image_dialog.h kde_splash_creator_autogen/include/ui_background_dialog.h kde_splash_creator_autogen/include/ui_metadata_dialog.h kde_splash_creator_autogen/include/ui_add_animatedimage_dialog.h kde_splash_creator_autogen/include/ui_add_text_dialog.h | ${cmake_ninja_workdir}CMakeFiles/kde_splash_creator_autogen ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_add_image_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_background_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_metadata_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_add_animatedimage_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_add_text_dialog.h: phony kde_splash_creator_autogen/timestamp || kde_splash_creator_autogen_timestamp_deps
+build CMakeFiles/kde_splash_creator_autogen kde_splash_creator_autogen/include/ui_mainwindow.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_image_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_background_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_metadata_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_animatedimage_dialog.h kde_splash_creator_autogen/include/dialogs/ui/ui_add_text_dialog.h | ${cmake_ninja_workdir}CMakeFiles/kde_splash_creator_autogen ${cmake_ninja_workdir}kde_splash_creator_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/dialogs/ui/ui_add_image_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/dialogs/ui/ui_add_background_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/dialogs/ui/ui_add_metadata_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/dialogs/ui/ui_add_animatedimage_dialog.h ${cmake_ninja_workdir}kde_splash_creator_autogen/include/dialogs/ui/ui_add_text_dialog.h: phony kde_splash_creator_autogen/timestamp || kde_splash_creator_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

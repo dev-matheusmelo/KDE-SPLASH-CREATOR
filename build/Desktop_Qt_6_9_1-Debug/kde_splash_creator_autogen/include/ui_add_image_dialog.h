@@ -28,7 +28,7 @@ public:
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
     QLabel *label;
-    QPushButton *pushButton_3;
+    QPushButton *pushButton_add;
     QHBoxLayout *horizontalLayout;
     QCheckBox *checkBox;
     QSpinBox *spinBox_X;
@@ -37,8 +37,8 @@ public:
     QSpinBox *spinBox_width;
     QLabel *label_3;
     QSpinBox *spinBox_height;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton;
+    QPushButton *pushButton_cancel;
+    QPushButton *pushButton_save;
 
     void setupUi(QDialog *add_item_dialog)
     {
@@ -56,11 +56,11 @@ public:
 
         verticalLayout->addWidget(label);
 
-        pushButton_3 = new QPushButton(add_item_dialog);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setEnabled(true);
+        pushButton_add = new QPushButton(add_item_dialog);
+        pushButton_add->setObjectName("pushButton_add");
+        pushButton_add->setEnabled(true);
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(pushButton_add);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
@@ -111,15 +111,15 @@ public:
 
         verticalLayout->addWidget(spinBox_height);
 
-        pushButton_2 = new QPushButton(add_item_dialog);
-        pushButton_2->setObjectName("pushButton_2");
+        pushButton_cancel = new QPushButton(add_item_dialog);
+        pushButton_cancel->setObjectName("pushButton_cancel");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(pushButton_cancel);
 
-        pushButton = new QPushButton(add_item_dialog);
-        pushButton->setObjectName("pushButton");
+        pushButton_save = new QPushButton(add_item_dialog);
+        pushButton_save->setObjectName("pushButton_save");
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(pushButton_save);
 
 
         retranslateUi(add_item_dialog);
@@ -131,14 +131,14 @@ public:
     {
         add_item_dialog->setWindowTitle(QCoreApplication::translate("add_item_dialog", "Add Image Window", nullptr));
         label->setText(QCoreApplication::translate("add_item_dialog", "Image:", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("add_item_dialog", "ADD IMAGE", nullptr));
+        pushButton_add->setText(QCoreApplication::translate("add_item_dialog", "ADD IMAGE", nullptr));
         checkBox->setText(QCoreApplication::translate("add_item_dialog", "Centered image", nullptr));
         spinBox_X->setPrefix(QCoreApplication::translate("add_item_dialog", "x:", nullptr));
         spinBox_Y->setPrefix(QCoreApplication::translate("add_item_dialog", "y:", nullptr));
         label_2->setText(QCoreApplication::translate("add_item_dialog", "Width:", nullptr));
         label_3->setText(QCoreApplication::translate("add_item_dialog", "Height:", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("add_item_dialog", "CANCEL", nullptr));
-        pushButton->setText(QCoreApplication::translate("add_item_dialog", "OK", nullptr));
+        pushButton_cancel->setText(QCoreApplication::translate("add_item_dialog", "CANCEL", nullptr));
+        pushButton_save->setText(QCoreApplication::translate("add_item_dialog", "SAVE", nullptr));
     } // retranslateUi
 
 };

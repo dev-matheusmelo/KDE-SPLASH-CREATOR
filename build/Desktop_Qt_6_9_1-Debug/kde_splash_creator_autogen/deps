@@ -1,27 +1,27 @@
 kde_splash_creator_autogen/timestamp: \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/CMakeLists.txt \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.h \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/build/Desktop_Qt_6_9_1-Debug/kde_splash_creator_autogen/moc_predefs.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/global_vars.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/global_vars.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_animatedimage_dialog.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_background_dialog.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_image_dialog.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_metadata_dialog.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/headers/add_text_dialog.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_animatedimage_dialog.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_background_dialog.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_image_dialog.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_metadata_dialog.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/sources/add_text_dialog.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.cpp \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/global_vars.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/splash_metadata_class.h \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/libs/splash_qml_class.h \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/main.cpp \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.cpp \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.cpp \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/splash_metadata.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/splash_qml_class.h \
 	/home/ziguser/Qt/6.9.1/gcc_64/include/QtCore/QVector \
 	/home/ziguser/Qt/6.9.1/gcc_64/include/QtCore/q17memory.h \
 	/home/ziguser/Qt/6.9.1/gcc_64/include/QtCore/q20functional.h \
@@ -657,7 +657,6 @@ kde_splash_creator_autogen/timestamp: \
 	/usr/include/strings.h \
 	/usr/include/time.h \
 	/usr/include/wchar.h \
-	/usr/include/x86_64-linux-gnu/asm/errno.h \
 	/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
 	/usr/include/x86_64-linux-gnu/bits/byteswap.h \
 	/usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -740,10 +739,10 @@ kde_splash_creator_autogen/timestamp: \
 	/usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
 	/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
 	/usr/lib/linux/uapi/x86/asm/errno.h \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_animatedimage_dialog.ui \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_image_dialog.ui \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/add_text_dialog.ui \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/background_dialog.ui \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui/add_animatedimage_dialog.ui \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui/add_background_dialog.ui \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui/add_image_dialog.ui \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui/add_metadata_dialog.ui \
+	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/dialogs/ui/add_text_dialog.ui \
 	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/mainwindow.ui \
-	/home/ziguser/Documentos/sources/qt_cpp/kde_splash_creator/metadata_dialog.ui \
 	/home/ziguser/Qt/Tools/CMake/bin/cmake
