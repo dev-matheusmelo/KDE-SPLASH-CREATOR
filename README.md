@@ -1,4 +1,5 @@
 # KDE-SPLASH-CREATOR
+![Interface](assets/screenshot.png "Screenshot demonstration")
 <h1>THIS TOOL WORKS ONLY IN KDE PLASMA 5 AND ABOVE</h1>
 <h1>What is</h1>
 <p>Kde splash creator is a tool that help you make your own splash screen with few clicks</p>
