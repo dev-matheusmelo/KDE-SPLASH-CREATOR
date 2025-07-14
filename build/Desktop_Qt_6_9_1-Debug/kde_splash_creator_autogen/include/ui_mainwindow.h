@@ -28,7 +28,7 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QLabel *label;
+    QLabel *label_elements;
     QPushButton *pushButton_remove;
     QListWidget *listWidget;
     QComboBox *comboBox_elements;
@@ -49,10 +49,10 @@ public:
         verticalLayout->setObjectName("verticalLayout");
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label = new QLabel(centralwidget);
-        label->setObjectName("label");
+        label_elements = new QLabel(centralwidget);
+        label_elements->setObjectName("label_elements");
 
-        horizontalLayout->addWidget(label);
+        horizontalLayout->addWidget(label_elements);
 
         pushButton_remove = new QPushButton(centralwidget);
         pushButton_remove->setObjectName("pushButton_remove");
@@ -112,7 +112,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "KDE SPLASH CREATOR", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "Elements:", nullptr));
+        label_elements->setText(QCoreApplication::translate("MainWindow", "Elements:", nullptr));
         pushButton_remove->setText(QCoreApplication::translate("MainWindow", "REMOVE ELEMENT", nullptr));
         comboBox_elements->setCurrentText(QString());
         pushButton_add->setText(QCoreApplication::translate("MainWindow", "ADD ELEMENT", nullptr));

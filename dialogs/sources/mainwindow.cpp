@@ -13,6 +13,10 @@
 #include "QFileInfo"
 #include "QDir"
 #include "QProcess"
+#include "QtNetwork/QNetworkAccessManager"
+#include <QtNetwork/QNetworkRequest>
+#include <QtNetwork/QNetworkReply>
+#include <QUrl>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -39,28 +43,19 @@ void MainWindow::on_pushButton_add_clicked()
     if(ui->comboBox_elements->currentText() == globals::combo_elements[1]){
         add_image_dialog w;
         if(w.exec() == 0){
-            ui->listWidget->clear();
-            foreach(auto copy, globals::qml_vec){
-                ui->listWidget->addItem(copy.get_type_text());
-            }
+            refresh_list();
             ui->pushButton_background->setEnabled(true);
         }
     }else if(ui->comboBox_elements->currentText() == globals::combo_elements[2]){
         add_animatedimage_dialog w;
         if(w.exec() == 0){
-            ui->listWidget->clear();
-            foreach(auto copy, globals::qml_vec){
-                ui->listWidget->addItem(copy.get_type_text());
-            }
+            refresh_list();
             ui->pushButton_background->setEnabled(true);
         }
     }else if(ui->comboBox_elements->currentText() == globals::combo_elements[3]){
         add_text_dialog w;
         if(w.exec() == 0){
-            ui->listWidget->clear();
-            foreach(auto copy, globals::qml_vec){
-                ui->listWidget->addItem(copy.get_type_text());
-            }
+            refresh_list();
             ui->pushButton_background->setEnabled(true);
         }
     }
@@ -81,10 +76,7 @@ void MainWindow::on_pushButton_background_clicked()
 {
     add_background_dialog w;
     if(w.exec() == 0){
-        ui->listWidget->clear();
-        foreach(auto copy, globals::qml_vec){
-            ui->listWidget->addItem(copy.get_type_text());
-        }
+        refresh_list();
         ui->listWidget->item(0)->setText("Rectangle(Background)");
         ui->pushButton_splashinfo->setEnabled(true);
     }
@@ -191,4 +183,19 @@ void MainWindow::on_pushButton_apply_clicked()
     file.write("[KSplash]\nTheme="+splash_folder_name.toUtf8());
     QMessageBox::about(this,"","Splash applyed, restart session to see");
 }
+
+void MainWindow::on_listWidget_itemClicked(QListWidgetItem *item)
+{
+    ui->label_elements->setText("Selected Element:"+item->text());
+}
+
+void MainWindow::refresh_list(){
+    ui->listWidget->clear();
+    foreach(auto copy, globals::qml_vec){
+        ui->listWidget->addItem(copy.get_type_text());
+    }
+}
+
+
+
 
