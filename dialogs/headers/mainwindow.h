@@ -41,5 +41,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void refresh_list();
+    void check_update(double program_ver);
 };
 #endif // MAINWINDOW_H

@@ -31,6 +31,13 @@ MainWindow::MainWindow(QWidget *parent)
         ui->pushButton_add->setEnabled(true);
     }
 
+
+    QString github("<a href=\"https://github.com/dev-matheusmelo/KDE-SPLASH-CREATOR\">Github:dev-matheusmelo</a>");
+    ui->label_github->setText(github);
+    double current_version = 1.0;
+    ui->label_version->setText("Version:"+QString::number(current_version));
+    check_update(current_version);
+
 }
 
 MainWindow::~MainWindow()
@@ -194,6 +201,29 @@ void MainWindow::refresh_list(){
     foreach(auto copy, globals::qml_vec){
         ui->listWidget->addItem(copy.get_type_text());
     }
+}
+
+void MainWindow::check_update(double program_ver){
+    QNetworkAccessManager *manager = new QNetworkAccessManager(this);
+    QUrl update_url("https://raw.githubusercontent.com/dev-matheusmelo/KDE-SPLASH-CREATOR/refs/heads/main/version.txt");
+    QString github("<a href=\"https://github.com/dev-matheusmelo/KDE-SPLASH-CREATOR\">Download Here</a>");
+    QNetworkRequest request(update_url);
+    QNetworkReply *reply = manager->get(request);
+    connect(reply, &QNetworkReply::finished, this, [this, reply, github, program_ver]() {
+        if (reply->error() == QNetworkReply::NoError) {
+
+            QString html_ver = reply->readLine().replace("\n","");
+            double online_ver = html_ver.toDouble();
+            if(program_ver < online_ver){
+                qDebug() << "online version:\n" << html_ver;
+                QMessageBox::information(this, "New update avalible","Update:"+html_ver+" is live, check github to download <br>" +github);
+            }
+        } else {
+            qDebug() << "Web request error:" << reply->errorString();
+            QMessageBox::warning(this, "Network error", "Can't check updates: " + reply->errorString());
+        }
+        reply->deleteLater();
+    });
 }
 
 
