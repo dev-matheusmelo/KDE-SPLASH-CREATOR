@@ -26,7 +26,7 @@ The **KDE Splash Creator** is a complete tool for creating custom splash screens
 <ul>
   <li>Progress bar</li>
   <li>more elements</li>
-  <li>kde neon support</li>
+  <li>custom delay</li>
 </ul>
 
 
